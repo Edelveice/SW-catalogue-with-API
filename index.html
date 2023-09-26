@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Star Wars Catalogue</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>&#128511;STAR WARS CATALOGUE&#128511;</h1>
+        <p id="message" class="text-primary">If you want to see more, just click on the button again</p>
+        <div class="button-container">
+            <button class="btn btn-primary main-buttons" id="characters" data-category="people">Characters
+                Catalogue</button>
+            <button class="btn btn-primary main-buttons" id="planets" data-category="planets">Planets Catalogue</button>
+            <button class="btn btn-primary main-buttons" id="vehicles" data-category="vehicles">Vehicles
+                Catalogue</button>
+        </div>
+        <div class="catalogue-container">
+
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules\axios\dist\axios.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
